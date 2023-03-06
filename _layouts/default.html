@@ -43,13 +43,17 @@
 	t.src=v;s=b.getElementsByTagName(e)[0];
 	s.parentNode.insertBefore(t,s)}(window, document,'script',
 	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '705788597956183');
-	fbq('track', 'PageView');
-	fbq('track', 'ViewContent');
-	fbq('track', 'Lead');
-	fbq('track', 'AddToCart');
+	fbq('set', 'autoConfig', false, '705788597956183');
+        fbq('init', '705788597956183');
+        fbq('track', 'PageView');
+	fbq('track', 'standart');                                                
+    
+    $("a[href=\"#\"]").click(function(e) {
+        e.preventDefault();
+        return false;
+    });
 	</script>
-
+	
 	<noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=705788597956183&ev=PageView&noscript=1"
 	/></noscript>
