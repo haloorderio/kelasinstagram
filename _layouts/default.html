@@ -67,7 +67,7 @@
 	<div class="h-screen overflow-auto max-md:pb-28 viewport">
 		<div class="flex flex-col items-center justify-center min-h-full py-6 [&_header]:w-full [&_main]:w-full [&_footer]:w-full [&_main_article]:mb-20 last:[&_main_article]:mb-0 bg-white max-w-[600px] mx-auto">
 
-		<header>
+		<!-- <header>
 		    <style>
 		    body {margin:0;}
 
@@ -112,6 +112,29 @@
 				    <span style="font-size:3px"> </span>
 				</div>
 
+		</header> -->
+		<header>
+			 <div class="navbar">
+			  <p>WEBINAR GRATIS:</p>
+			  <p><b>JANGAN LEWATKAN KESEMPATAN INI!</b></p>
+			 </div>
+			 <style>
+			  header {
+			   position: sticky;
+			   top: 0;
+			   background: white;
+			   box-shadow: 0 0 20px rgba(0,0,0,.1);
+			   margin-top: -1.5rem;
+			  }
+			  .navbar {
+			   padding: 1rem;
+			   text-align: center;
+			  }
+			  .navbar b {
+			   color: red;
+			   font-size: 1rem;
+			  }
+			 </style>
 		</header>
 			
 			<!-- {% if page.url == '/' %}
