@@ -67,52 +67,57 @@
 	<div class="h-screen overflow-auto max-md:pb-28 viewport">
 		<div class="flex flex-col items-center justify-center min-h-full py-6 [&_header]:w-full [&_main]:w-full [&_footer]:w-full [&_main_article]:mb-20 last:[&_main_article]:mb-0 bg-white max-w-[600px] mx-auto">
 
-			{% if page.url == '/' %}
-			<header>
-			<style>
+			<div class="mx-6">
+				<div class="prose my-10">
+				{% if page.url == '/' %}
+				<header>
+				<style>
+				body {margin:0;}
 
-			h6{font-weight:bold; font-size:14px; text-align:center;}
-			.red{color:red}
+				h6{font-weight:bold; font-size:14px; text-align:center;}
+				.red{color:red}
 
-			.navbar {
-			  overflow: hidden;
-			  background-color: #fff;
-			  position: fixed;
-			  top: 0;
-			  width: 100%;
-			}
+				.navbar {
+				  overflow: hidden;
+				  background-color: #fff;
+				  position: fixed;
+				  top: 0;
+				  width: 100%;
+				}
 
-			.navbar a {
-			  float: left;
-			  display: block;
-			  color: #000000;
-			  text-align: center;
-			  padding: 14px 16px;
-			  text-decoration: none;
-			  font-size: 17px;
-			}
+				.navbar a {
+				  float: left;
+				  display: block;
+				  color: #000000;
+				  text-align: center;
+				  padding: 14px 16px;
+				  text-decoration: none;
+				  font-size: 17px;
+				}
 
-			.navbar a:hover {
-			  background: #ddd;
-			  color: black;
-			}
+				.navbar a:hover {
+				  background: #ddd;
+				  color: black;
+				}
 
-			.main {
-			  padding: 18px;
-			  margin-top: 40px;
-			  height: 1500px; /* Used in this example to enable scrolling */
-			}
-			</style>
-			</head>
-			<body>
+				.main {
+				  padding: 18px;
+				  margin-top: 40px;
+				  height: 1500px; /* Used in this example to enable scrolling */
+				}
+				</style>
+				</head>
+				<body>
 
-			<div class="navbar">
-			<center><p><span class="black">WEBINAR GRATIS:</span></p></center>
-			<p><h6><span class="red">JANGAN LEWATKAN KESEMPATAN INI!</span></h6></p>
+				<div class="navbar">
+				<center><p><span class="black">WEBINAR GRATIS:</span></p></center>
+				<p><h6><span class="red">JANGAN LEWATKAN KESEMPATAN INI!</span></h6></p>
+				</div>
+
+				</header>
+				{% endif %}
+				</div>
 			</div>
-				
-			</header>
-			{% endif %}
 			
 			<!-- {% if page.url == '/' %}
 			<header>
